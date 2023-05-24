@@ -17,7 +17,167 @@
                 <li class="tm_t">
                     <h3>@item.ItemName</h3>
                     <div class="tm_td">@item.ItemDescription</div>
-                    <button>Press me!</button>
+                    <select id="listbox" name="listbox" onchange="showHideDiv()">
+                        <option value="select">Válassz receptet! </option>
+                        <option value="rakott_krumpli">Rakott krumpli</option>
+                        <option value="porkolt">Pörkölt</option>
+                        <option value="nokedli">Nokedli</option>
+                        <option value="rantottkaraj">Rántott karaj</option>
+                        <option value="csirkeraguleves">Csirkeragu leves</option>
+                    </select>
+
+                    @* Kolbász div *@
+                    <div id="kolbaszdiv" style="display:none">
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li>6 db burgonya <input type="checkbox" /></li>
+                            <li>7 db főtt tojás <input type="checkbox" /></li>
+                            <li>30 dkg kolbász <input type="checkbox" /></li>
+                            <li>só, bors ízlés szerint <input type="checkbox" /></li>
+                            <li>(opcionális) 10 dkg reszelt sajt <input type="checkbox" /></li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <div>
+                            <p>Megmosás után hámozzuk meg a burgonyákat majd főzzük meg őket külön lábasba a tojással, majd vágjuk szeletekre.</p>
+                            <ol>
+                                <li>Kolbászt vágjuk karikákra</li>
+                                <li>Kenjük meg a tepsit tejföllel majd rakjuk rá a szeletekre vágott burgonyát, tojást.</li>
+                                <li>Locsoljuk meg őket tejföllel, majd rakjuk rá a kolbászt, figyelve arra, hogy rétegesen kerüljenek a hozzávalók.</li>
+                                <li>Helyezzük rá a záró burgonya réteget, majd kenjük meg utoljára a tejföllel</li>
+                                <li>Minden réteget ízlés szerint fűszerezzünk sóval, borssal</li>
+                                <li>(opcionális) Szórjuk a tetejére a reszelt sajtot</li>
+                                <li>Tegyük be a sütőbe a tepsit 200 fokra előmelegített sütőbe.</li>
+                                <li>50 perc-1 óra mulva vegyük ki a tepsit a sütőből és el is készült</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    @* Rakott krumpli div *@
+                    <div id="porkolt" style="display:none">
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li>6 db burgonya <input type="checkbox" /></li>
+                            <li>7 db főtt tojás <input type="checkbox" /></li>
+                            <li>30 dkg kolbász <input type="checkbox" /></li>
+                            <li>600 dkg tejföl <input type="checkbox" /></li>
+                            <li>só, bors ízlés szerint<input type="checkbox" /></li>
+                            <li>(opcionális) 10dkg reszelt sajt</li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <div>
+                            <p>Megmosás után hámozzuk meg a burgonyákat majd főzzük meg őket külön lábasba a tojással, majd vágjuk szeletekre.</p>
+                            <ol>
+                                <li>Kolbászt vágjuk karikákra</li>
+                                <li>Kenjük meg a tepsit tejföllel majd rakjuk rá a szeletekre vágott burgonyát, tojást.</li>
+                                <li>Locsoljuk meg őket tejföllel, majd rakjuk rá a kolbászt, figyelve arra, hogy rétegesen kerüljenek a hozzávalók.</li>
+                                <li>Helyezzük rá a záró burgonya réteget, majd kenjük meg utoljára a tejföllel</li>
+                                <li>Minden réteget ízlés szerint fűszerezzünk sóval, borssal</li>
+                                <li>(opcionális) Szórjuk a tetejére a reszelt sajtot</li>
+                                <li>Tegyük be a sütőbe a tepsit 200 fokra előmelegített sütőbe.</li>
+                                <li>50 perc-1 óra mulva vegyük ki a tepsit a sütőből és el is készült</li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    @* Nokedli div *@
+
+                    <div id="nokedlidiv" style="display:none">
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li>500 g finomliszt <input type="checkbox" /></li>
+                            <li>1 db tojás <input type="checkbox" /></li>
+                            <li>1 teáskanál só <input type="checkbox" /></li>
+                            <li>3 dl víz <input type="checkbox" /></li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <div>
+                            <ol>
+                                <li>A fent leírt alapanyagokat egy tálba öntjük és fakanállal egy közepesen lágy masszát keverünk ki.</li>
+                                <li>Sós lobogó vízben nokedliszaggató segítségével kifőzzük a tésztát.</li>
+                                <li>Amint feljönnek a víz felszínére szűrővel kivesszük őket a vízből és egy tálba rakjuk a kész nokedlit.</li>
+                            </ol>
+                            <p>Elsősorban pörkölthöz vagy más mártásos ételekhez ajánljuk!</p>
+                        </div>
+                    </div>
+
+                    @* Rántott karaj div *@
+
+                    <div id="rantottkaraj" style="display:none">
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li>1 kg sertéskaraj <input type="checkbox" /></li>
+                            <li>20 dkg zsemlemorzsa <input type="checkbox" /></li>
+                            <li>5 darab közepes méretű tojás <input type="checkbox" /></li>
+                            <li>20 dkg liszt <input type="checkbox" /></li>
+                            <li>3 dl olaj (sütéshez) <input type="checkbox" /></li>
+                            <li>1 kg burgonya <input type="checkbox" /></li>
+                            <li>2 db kígyóuborka <input type="checkbox" /></li>
+                            <li>3 evőkanál ecet <input type="checkbox" /></li>
+                            <li>2 evőkanál cukor <input type="checkbox" /></li>
+                            <li>Só, bors, fűszerek ízlés szerint <input type="checkbox" /></li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <div>
+                            <ol>
+                                <li>A húst szeletekre vágjuk, majd kiklopfoljuk vékonyra.</li>
+                                <li>Előkészítjük a panírozáshoz szükséges lisztet, tojást, zsemlemorzsát</li>
+                                <li>Ízesítjük a panírt ízlés szerint opcionális fűszerekkel</li>
+                                <li>A hússzeleteket bepanírozzuk, liszt, tojás, morzsa sorrendben majd forró olajban kisütjük őket, amíg aranybarnának nem látjuk</li>
+                                <li>A burgonyákat meghámozzuk majd hasáb méretűre vágjuk</li>
+                                <li>A burgonyahasábokat szintén forró olajban, egy másik edényben kisütjük.</li>
+                                <li>Az uborkákat megmossuk, opcionálisan meghámozzuk, majd karikára szeleteljük</li>
+                                <li>Elkészítjük a dresszinget az uborkához, az ecetet vízzel illetve a cukorral összekeverjük, egy picit megsózzuk.</li>
+                                <li>Beletesszük az uborkát a dresszingbe majd egy kicsit betesszük a hűtőbe pihenni.</li>
+                            </ol>
+                            <p>Ezek után nincs más dolgunk mint tálalni az ételeket, amiket elkészítettünk.</p>
+                        </div>
+                    </div>
+
+                    @* Csirkeraguleves div *@
+
+                    <div id="csirkeraguleves" style="display:none">
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li>0.5 kg csirkemell illetve csirkecomb <input type="checkbox" /></li>
+                            <li>80 dkg burgonya <input type="checkbox" /></li>
+                            <li>2 db vöröshagyma <input type="checkbox" /></li>
+                            <li>1 gerezd fokhagyma <input type="checkbox" /></li>
+                            <li>1 evőkanál fűszerpaprika) <input type="checkbox" /></li>
+                            <li>2 db sárgarépa <input type="checkbox" /></li>
+                            <li>1 db petrezselyem <input type="checkbox" /></li>
+                            <li>3 db zsályalevél <input type="checkbox" /></li>
+                            <li>2 db babérlevél <input type="checkbox" /></li>
+                            <li>250 gramm tejföl <input type="checkbox" /></li>
+                            <li>1 evőkanál liszt <input type="checkbox" /></li>
+                            <li>2 darab leveskocka <input type="checkbox" /></li>
+                            <li>Só, bors ízlés szerint <input type="checkbox" /></li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <div>
+                            <ol>
+                                <li>A csirkemellet nagyobb kockára vágjuk illetve alaposan megmossuk a húst.</li>
+                                <li>Üvegesre hevítjük a finomra vágott hagymát a lábasba, majd hozzáadjuk a csirkehúsokat, és fehéredésig piritjuk.</li>
+                                <li>Ezután kivesszük a húst egy tálba, majd hozzáadjuk a pirospaprikát kicsi vízzel.</li>
+                                <li>Vágjuk kisebb darabokra a karalábét, sárgarépát, petrezselymet majd adjuk tegyük bele a lábasba.</li>
+                                <li>Engedjük fél liter vízzel, majd tegyük bele a zsályaleveleket, babérleveleket, ízesítsük sóval borssal.</li>
+                                <li>Vágjuk kockára a burgonyákat majd ezt is adjuk hozzá a levesünkhez</li>
+                                <li>Kicsi párolás után tegyük vissza a csirkehúst, illetve a leveskockákat, majd öntsük fel még 1 liter vízzel, és fedő alatt főzzük puhára a hozzávalókat</li>
+                                <li>A tejfölt tegyük egy tálba majd a liszttel és kicsi lével keverjük el, és adjuk hozzá a levesünkhöz.</li>
+                                <li>10 perc főzés után nincs más dolgunk mint egy utolsót kóstolnunk, és ha szükséges ízesíteni.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    @* Kosárba div *@
+
+                    <div id="kosarba_div">
+                        <button id="kosarba_gomb">Kosárba!</button>
+                    </div>
+
+
+
+
                     @{
                         if (Dnn.ModuleContext.IsEditable)
                         {
@@ -27,6 +187,60 @@
                             </div>
                         }
                     }
+                    <script>
+                        function showHideDiv() {
+                            var listBox = document.getElementById("listbox");
+                            var selectedOption = listBox.options[listBox.selectedIndex].value;
+                            var kolbaszDiv = document.getElementById("kolbaszdiv");
+                            var porkoltDiv = document.getElementById("porkolt")
+                            var nokedliDiv = document.getElementById("nokedlidiv")
+                            var rantottkarajDiv = document.getElementById("rantottkaraj")
+                            var csirkeragulevesDiv = document.getElementById("csirkeraguleves")
+
+                            if (selectedOption == "select") {
+                                kolbaszDiv.style.display = "none"
+                                porkoltDiv.style.display = "none"
+                                nokedliDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "none"
+                                csirkeragulevesDiv.style.display = "none"
+                            };
+                            if (selectedOption == "rakott_krumpli") {
+                                kolbaszDiv.style.display = "unset"
+                                porkoltDiv.style.display = "none"
+                                nokedliDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "none"
+                                csirkeragulevesDiv.style.display = "none"
+                            };
+                            if (selectedOption == "porkolt") {
+                                porkoltDiv.style.display = "unset"
+                                kolbaszDiv.style.display = "none"
+                                nokedliDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "none"
+                                csirkeragulevesDiv.style.display = "none"
+                            };
+                            if (selectedOption == "nokedli") {
+                                nokedliDiv.style.display = "unset"
+                                porkoltDiv.style.display = "none"
+                                kolbaszDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "none"
+                                csirkeragulevesDiv.style.display = "none"
+                            }
+                            if (selectedOption == "rantottkaraj") {
+                                kolbaszDiv.style.display = "none"
+                                porkoltDiv.style.display = "none"
+                                nokedliDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "unset"
+                                csirkeragulevesDiv.style.display = "none"
+                            }
+                            if (selectedOption == "csirkeraguleves") {
+                                kolbaszDiv.style.display = "none"
+                                porkoltDiv.style.display = "none"
+                                nokedliDiv.style.display = "none"
+                                rantottkarajDiv.style.display = "none"
+                                csirkeragulevesDiv.style.display = "unset"
+                            }
+                        }
+                    </script>
                 </li>
             }
         </ul>
