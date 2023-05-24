@@ -17,7 +17,28 @@
                 <li class="tm_t">
                     <h3>@item.ItemName</h3>
                     <div class="tm_td">@item.ItemDescription</div>
-                    <button>Press me!</button>
+                    <select id="parent" name="parent">
+                        <option value="select">Válassz receptet! </option>
+                        <option value="porkolt">Pörkölt</option>
+                    </select>
+                    <div>
+                        <h4>Hozzávalók</h4>
+                        <ul>
+                            <li id="zold">6 db burgonya</li>
+                            <li id="piros">7 db főtt tojás</li>
+                            <li id="zold">30 dkg kolbász</li>
+                            <li id="piros">só, bors ízlés szerint</li>
+                            <li id="zold">(opcionális) 10 dkg reszelt sajt</li>
+                        </ul>
+                        <h4>Elkészítési lépések</h4>
+                        <ol>
+                            <li>asd</li>
+                            <li>asd</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <button>Press me!</button>
+                    </div>
                     @{
                         if (Dnn.ModuleContext.IsEditable)
                         {
