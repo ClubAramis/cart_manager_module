@@ -1,7 +1,7 @@
 ﻿<h3>cart_manager_module</h3>
 <p class="Contributor">
 	ClubAramis <br />
-	<a href="mailto:gabor.szell2@stud.uni-corvinus.hu">gabor.szell2@stud.uni-corvinus.hu</a><br />
+	<a href="mailto:500gabor@gmail.com">500gabor@gmail.com</a><br />
 	<a href=http://20.234.113.211:8091/>http://20.234.113.211:8091/</a><br />
 	This extension was created using <a href="https://www.christoc.com">Christoc's</a> Module Development Templates for DNN.
 </p>
