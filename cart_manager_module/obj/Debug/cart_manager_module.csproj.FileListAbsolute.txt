@@ -1,10 +1,10 @@
-C:\Program Files\dnn_dev\bin\cart_manager_module.dll.config
-C:\Program Files\dnn_dev\bin\cart_manager_module.dll
-C:\Program Files\dnn_dev\bin\cart_manager_module.pdb
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.AssemblyReference.cache
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\CartManagercart_manager_module.App_LocalResources.Settings.resources
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.GenerateResource.cache
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.CoreCompileInputs.cache
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.CopyComplete
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.dll
-C:\Program Files\dnn_dev\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.pdb
+C:\Users\user\Desktop\DNN\bin\cart_manager_module.dll.config
+C:\Users\user\Desktop\DNN\bin\cart_manager_module.dll
+C:\Users\user\Desktop\DNN\bin\cart_manager_module.pdb
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\CartManagercart_manager_module.App_LocalResources.Settings.resources
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.GenerateResource.cache
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.csproj.CopyComplete
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.dll
+C:\Users\user\Desktop\DNN\DesktopModules\cart_manager_module\cart_manager_module\obj\Debug\cart_manager_module.pdb
